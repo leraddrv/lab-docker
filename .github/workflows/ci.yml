@@ -1,9 +1,12 @@
-yaml id="k3c6t7"
 name: CI/CD Pipeline
 
 on:
   push:
     branches: [ "main" ]
+
+permissions:
+  contents: read
+  packages: write
 
 jobs:
   linter:
